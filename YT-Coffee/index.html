@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <ul id="navMenu">
+            <i class='bx bx-x closeIcon' id="closeMenu" ></i>
+          <li>Home</li>
+          <li>about us</li>
+          <li>products</li>
+          <li>customers</li>
+        </ul>
+        <div class="icons">
+          <i class="bx bx-cart"></i>
+          <i class="bx bx-search-alt-2"></i>
+          <i class='bx bx-menu menuIcon' id="openMenu" ></i>
+        </div>
+      </nav>
+
+      <!-- main section --- hero -->
+
+      <main>
+        <!-- left section -->
+        <div class="left-section">
+          <h1>Start your day with coffee</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt
+            facilis obcaecati odit iste dignissimos, exercitationem corporis
+            molestiae ex quaerat?
+          </p>
+          <button>Shop Now</button>
+        </div>
+        <!-- right section -->
+        <div class="right-section">
+          <img src="images/main.png" alt="" />
+        </div>
+      </main>
+    </header>
+    <!-- script for navbar -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let openMenu = document.getElementById('openMenu');
+        let closeMenu = document.getElementById('closeMenu');
+        let navMenu = document.getElementById('navMenu');
+
+        openMenu.addEventListener("click", () => {
+            navMenu.style.right = "0";
+        })
+
+        closeMenu.addEventListener("click", () => {
+            navMenu.style.right = "-200px";
+        })
+        
+    })
+  </script>
+  </body>
+
+  
+</html>
